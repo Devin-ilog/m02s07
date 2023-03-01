@@ -1,6 +1,4 @@
-function Botao({ texto }) {
-  return <button>{texto}</button>;
-}
+import Botao from "./Botao";
 
 function App({ meuParametro, blah }) {
   const texto = "Bah... texto embutido!";
