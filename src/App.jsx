@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Cabecalho />
-      <Principal />
+      <Principal exemploProp={texto} />
       <Rodape />
     </div>
   );
