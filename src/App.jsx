@@ -1,8 +1,10 @@
 import Botao from "./Botao";
 
+// Definição do componente App
 function App({ meuParametro, blah }) {
   const texto = "Bah... texto embutido!";
 
+  // Todo componente deve retornar JSX
   return (
     <div
       id="idddd"
@@ -16,6 +18,7 @@ function App({ meuParametro, blah }) {
       <p>
         {meuParametro} {blah}
       </p>
+      {/* Utilização de um componente Botao repetidas vezes */}
       <Botao texto="Botao A" />
       <Botao texto="Botao B" />
       <Botao texto="Botao C" />
