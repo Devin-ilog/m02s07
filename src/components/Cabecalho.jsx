@@ -1,4 +1,4 @@
-function Header() {
+function Cabecalho() {
   return (
     <header>
       <h1>BlogDiH</h1>
@@ -6,4 +6,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Cabecalho;

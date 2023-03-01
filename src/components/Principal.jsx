@@ -1,4 +1,4 @@
-function Main() {
+function Principal() {
   return (
     <main>
       <h2>Estou aprendendo React!</h2>
@@ -8,4 +8,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Principal;

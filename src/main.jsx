@@ -13,6 +13,6 @@ reactRoot.render(
   <React.StrictMode>
     {/* Comentário dentro de JSX */}
     {/* Componente App sendo utilizado com parâmetros */}
-    <App meuParametro="sou texto parametro" blah="batata" />
+    <App />
   </React.StrictMode>
 );

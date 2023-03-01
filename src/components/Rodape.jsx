@@ -1,4 +1,4 @@
-function Footer() {
+function Rodape() {
   return (
     <footer>
       <p>Todos direitos reservados | BlogDiH | 2023</p>
@@ -6,4 +6,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Rodape;

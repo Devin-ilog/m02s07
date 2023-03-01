@@ -1,6 +1,6 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Cabecalho from "./components/Cabecalho";
+import Principal from "./components/Principal";
+import Rodape from "./components/Rodape";
 
 // Definição do componente App
 function App() {
@@ -9,9 +9,9 @@ function App() {
   // Todo componente deve retornar JSX
   return (
     <div>
-      <Header />
-      <Main />
-      <Footer />
+      <Cabecalho />
+      <Principal />
+      <Rodape />
     </div>
   );
 }
