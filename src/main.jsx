@@ -8,6 +8,6 @@ const reactRoot = ReactDOM.createRoot(elementoRaiz);
 
 reactRoot.render(
   <React.StrictMode>
-    <App />
+    <App meuParametro="sou texto parametro" blah="batata" />
   </React.StrictMode>
 );
