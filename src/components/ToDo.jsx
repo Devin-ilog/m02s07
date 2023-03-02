@@ -9,13 +9,20 @@ function ToDo({ descricao, concluido }) {
     setChecado(!checado);
   }
 
+  // Uma maneira de fazer renderização condicional
+  if (descricao === "Arroz") {
+    return <div>Não mexa no arroz</div>;
+  }
+
   return (
     <div>
       <input type="checkbox" onChange={clicou} checked={checado} />
       <span style={{ textDecoration: checado ? "line-through" : "none" }}>
         {descricao}
       </span>
-      <button>🗑️</button>
+      {/* Renderizações condicionais equivalentes */}
+      {/* {checado ? <button>🗑️</button>: null} */}
+      {checado && <button>🗑️</button>}
     </div>
   );
 }
