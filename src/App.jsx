@@ -9,8 +9,8 @@ function App() {
   // Todo componente deve retornar JSX
   return (
     <div>
-      <Cabecalho />
-      <Principal exemploProp={texto} />
+      <Cabecalho titulo="BlogDiH" />
+      <Principal />
       <Rodape />
     </div>
   );
