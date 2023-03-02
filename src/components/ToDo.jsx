@@ -11,12 +11,7 @@ function ToDo({ descricao, concluido }) {
 
   return (
     <div>
-      <input
-        type="checkbox"
-        onChange={clicou}
-        checked={checado}
-        defaultChecked={concluido}
-      />
+      <input type="checkbox" onChange={clicou} checked={checado} />
       <span style={{ textDecoration: checado ? "line-through" : "none" }}>
         {descricao}
       </span>
