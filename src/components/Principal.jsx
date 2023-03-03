@@ -1,6 +1,7 @@
 //import Botao from "./Botao";
 //import tuxJpg from "../assets/tux.jpg";
 
+import React from "react";
 import ToDo from "./ToDo";
 
 function Principal(prop) {
@@ -12,7 +13,7 @@ function Principal(prop) {
     { id: 123, descricao: "Batata", concluido: true },
     { id: 543, descricao: "Arroz", concluido: true },
     { id: 564, descricao: "Sapato", concluido: false },
-    { id: 266, descricao: "Sapato", concluido: false },
+    { id: 266, descricao: "Gato", concluido: false },
   ];
 
   return (
@@ -30,6 +31,14 @@ function Principal(prop) {
           />
         );
       })}
+
+      {/* Exemplo de fragment que não acrescenta elementos extras */}
+      {true && (
+        <>
+          <span>Span</span>
+          <strong>Strong</strong>
+        </>
+      )}
 
       <h2
         style={{
