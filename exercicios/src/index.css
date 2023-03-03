@@ -12,3 +12,8 @@ body {
   font-family: sans-serif;
   background-color: #d7dbdd; /* gray */
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
