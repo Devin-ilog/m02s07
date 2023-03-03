@@ -8,11 +8,28 @@ function Principal(prop) {
   // console.log(prop);
   const tamanho = 60;
 
+  const itensTodo = [
+    { id: 123, descricao: "Batata", concluido: true },
+    { id: 543, descricao: "Arroz", concluido: true },
+    { id: 564, descricao: "Sapato", concluido: false },
+    { id: 266, descricao: "Sapato", concluido: false },
+  ];
+
   return (
     <main>
-      <ToDo descricao="Batata" concluido />
+      {/* <ToDo descricao="Batata" concluido />
       <ToDo descricao="Arroz" concluido={true} />
-      <ToDo descricao="Sapato" />
+      <ToDo descricao="Sapato" /> */}
+
+      {itensTodo.map((item) => {
+        return (
+          <ToDo
+            key={item.id}
+            descricao={item.descricao}
+            concluido={item.concluido}
+          />
+        );
+      })}
 
       <h2
         style={{

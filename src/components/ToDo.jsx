@@ -10,9 +10,9 @@ function ToDo({ descricao, concluido }) {
   }
 
   // Uma maneira de fazer renderização condicional
-  if (descricao === "Arroz") {
-    return <div>Não mexa no arroz</div>;
-  }
+  // if (descricao === "Arroz") {
+  //   return <div>Não mexa no arroz</div>;
+  // }
 
   return (
     <div>
