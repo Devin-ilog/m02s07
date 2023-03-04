@@ -1,10 +1,16 @@
-import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <>
+      <Navbar />
+      <main id="pageContainer">
+        <HomePage />
+      </main>
+      <Footer />
+    </>
   );
 }
 
