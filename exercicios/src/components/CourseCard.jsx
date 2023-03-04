@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import "./CourseCard.css";
 
+import clockImg from "../assets/clock.png";
+
 function CourseCard({ imageUrl, name, category, description, duration }) {
   return (
     <div className="courseCardContainer">
@@ -8,8 +10,11 @@ function CourseCard({ imageUrl, name, category, description, duration }) {
         {imageUrl && <img src={imageUrl} alt={`Imagem curso ${name}`} />}
         <h3>{name}</h3>
       </div>
-      <p>{duration} h</p>
-      <p>{description}</p>
+      <div className="courseCardDuration">
+        <img src={clockImg} alt="Ícone de relógio" />
+        <p>{duration}h</p>
+      </div>
+      <button className="courseCardActionButton">Ver detalhes</button>
     </div>
   );
 }
