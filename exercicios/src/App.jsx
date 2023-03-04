@@ -1,14 +1,16 @@
 import Navbar from "./components/Navbar";
+import PageWrapper from "./components/PageWrapper";
 import Footer from "./components/Footer";
+
 import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <>
       <Navbar />
-      <main id="pageContainer">
+      <PageWrapper>
         <HomePage />
-      </main>
+      </PageWrapper>
       <Footer />
     </>
   );
